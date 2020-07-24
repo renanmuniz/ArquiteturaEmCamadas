@@ -23,7 +23,7 @@ public class Sistema {
 	}
 	
 	/** Executar a inicializacao do sistema **/
-	public static void inicializarSistema() {
+	public static void iniciarSistema() {
 		if(conexao==null) {
 			try {
 				Class.forName("org.hsqldb.jdbcDriver");
@@ -39,7 +39,7 @@ public class Sistema {
 	/** Retorna a conexao ativa **/
 	public static Connection getConexao() {
 		if(conexao==null) {
-			inicializarSistema();
+			iniciarSistema();
 		}
 		return conexao;
 	}
