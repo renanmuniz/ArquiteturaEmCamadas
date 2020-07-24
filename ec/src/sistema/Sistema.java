@@ -38,12 +38,21 @@ public class Sistema {
 	
 	/** Retorna a conexao ativa **/
 	public static Connection getConexao() {
-		return null;
+		if(conexao==null) {
+			inicializarSistema();
+		}
+		return conexao;
 	}
 	
 	/** Executar o desligamento do sistema **/
 	public static void desligarSistema() {
-		
+		try {
+			conexao.close();
+			conexao = null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("Erro no encerramento da conexao com banco de dados");
+		}
 	}
 	
 	
