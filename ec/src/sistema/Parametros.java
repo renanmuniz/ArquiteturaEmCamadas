@@ -18,5 +18,5 @@ public class Parametros {
 	public static final String BASE_SGDB = "jdbc:hsqldb:file:E:/BDhypersql/base/aula";
 	
 	/** Armazena o endereco de conexao do banco de dados XML **/
-	public static final String BASE_XML = "???";
+	public static final String BASE_XML = "E:/EclipseWorkspace/ArquiteturaEmCamadas/bancoXML/";
 }

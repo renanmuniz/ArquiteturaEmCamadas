@@ -51,6 +51,10 @@ public class Cliente {
 		if (!email.contains("@")) {
 			throw new NegocioException("email inválido.");
 		}
+		//bloqueio de email da bol
+		if (email.contains("bol")) {
+			throw new NegocioException("email da bol não é permitido.");
+		}
 	}
 
 	

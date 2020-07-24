@@ -19,6 +19,7 @@ public class FabricaPersistencia {
 	 * @return persistencia de clientes
 	 */
 	public static ClienteRepositorio fabricarCliente() {
-		return new ClienteJdbcImp();
+		//return new ClienteJdbcImp();
+		return new ClienteXmlImp();
 	}
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_261" class="java.beans.XMLDecoder">
+ <object class="negocio.Cliente">
+  <void property="email">
+   <string>ana@gmail.com</string>
+  </void>
+  <void property="nome">
+   <string>Ana</string>
+  </void>
+ </object>
+</java>
